@@ -23,7 +23,9 @@ public class App {
 
     public int readNum(String ordinalNumber) {
         System.out.printf("What is the %s number? ", ordinalNumber);
-        return Integer.parseInt(in.nextLine());
+        String input = in.nextLine();
+
+        return Integer.parseInt(input);
     }
 
     public int[] performOperations(int num1, int num2) {
